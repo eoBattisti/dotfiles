@@ -21,9 +21,9 @@
 margin-bottom = 0
 margin-top = 0
 
-include-file = /home/battisti/Documentos/projects/dotfiles/polybar/colors.ini
-include-file = /home/battisti/Documentos/projects/dotfiles/polybar/modules.ini
-include-file = /home/battisti/Documentos/projects/dotfiles/polybar/system.ini
+include-file = ~/.config/polybar/colors.ini
+include-file = ~/.config/polybar/modules.ini
+include-file = ~/.config/polybar/system.ini
 
 [bar/bar]
 monitor=${env:MONITOR:}
@@ -59,18 +59,18 @@ font-1 = "DroidSansMono Nerd Font:size=10;3"
 font-2 = "DroidSansMono Nerd Font:size=11;3"
 font-3 = "DroidSansMono Nerd Font:size=15;5"
 ; Glyphs
-font-4 = "DroidSansMono Nerd Font:style=Regular:size=15;4"
+font-4 = "DroidSansMono Nerd Font:style=Regular:size=21;5"
 
-modules-left = bi i3 bd
+modules-left = bi i3  bd 
 modules-center = bi date bd
-modules-right = sep bi pulseaudio bd sep bi memory bd sep bi cpu bd sep bi battery bd
+modules-right = sep bi wlan bd sep bi pulseaudio bd sep bi memory bd sep bi battery bd
 
 cursor-click = pointer
 cursor-scroll = ns-resize
 
 spacing = 0
 separator =
-dim-value = 1.0
+;dim-value = 1.0
 
 enable-ipc = true
 

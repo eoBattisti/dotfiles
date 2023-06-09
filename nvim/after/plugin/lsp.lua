@@ -7,7 +7,9 @@ lsp.on_attach(function (client, bufnr)
   local opts = {buffer = bufnr, remap = false}
 
   vim.keymap.set("n", "gd", function () vim.lsp.buf.definition() end)
+  vim.keymap.set("n", "gD", function () vim.lsp.buf.declaration() end)
   vim.keymap.set("n", "K", function () vim.lsp.buf.hover() end)
+  vim.keymap.set("n", "=", function () vim.lsp.buf.format() end)
 --  vim.keymap.set("n", "gd", function () vim.lsp.buf.definition() end)
 --  vim.keymap.set("n", "gd", function () vim.lsp.buf.definition() end)
 --  vim.keymap.set("n", "gd", function () vim.lsp.buf.definition() end)
@@ -16,4 +18,6 @@ lsp.on_attach(function (client, bufnr)
 --  vim.keymap.set("n", "gd", function () vim.lsp.buf.definition() end)
 --  vim.keymap.set("n", "gd", function () vim.lsp.buf.definition() end)
 end)
+
+
 lsp.setup()
